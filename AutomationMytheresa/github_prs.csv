@@ -1,0 +1,26 @@
+PR Name,Creation Date,Author
+"Create a dedicated upgrade command",2023-07-21T18:29:40Z,stnguyen90
+"Add support for queries in List attributes endpoint",2023-07-20T18:52:35Z,fanatic75
+"change to use findOne instead of iterating index array",2023-07-19T08:35:49Z,fanatic75
+"Appwrite 1.4.0",2023-07-19T07:15:47Z,eldadfux
+"feat: router gen. 2",2023-07-18T12:54:35Z,TorstenDittmann
+"Bump clamav to get it working again",2023-07-17T20:11:45Z,stnguyen90
+"feat: add support for migrations",2023-07-17T16:09:05Z,christyjacob4
+"Add support for migrations",2023-07-17T15:54:20Z,christyjacob4
+"Adding the ability to change Appwrite hard limit",2023-07-17T12:41:02Z,byawitz
+"Fix 5404 update doc without relation permission",2023-07-13T17:45:26Z,fanatic75
+"Fix cache delete",2023-07-13T11:07:31Z,shimonewman
+"Add APIs to atomically increment/decrement numeric attributes",2023-07-11T23:26:21Z,stnguyen90
+"Update method name for updateMembershipRoles",2023-07-11T06:13:40Z,lohanidamodar
+"feat: SSR",2023-07-06T15:21:15Z,loks0n
+"fix doc comment for filter method",2023-07-05T06:06:50Z,lohanidamodar
+"Refactor workers",2023-07-04T07:46:33Z,shimonewman
+"Refactor init Files",2023-07-04T02:35:01Z,lohanidamodar
+"Fix small typo in docs",2023-06-29T14:40:30Z,mendelgordon
+"Audit Appwrite's generic error messages",2023-06-22T21:35:43Z,gewenyu99
+"update Flutter - Dart SDK",2023-06-21T10:56:14Z,lohanidamodar
+"Feat: Whitelist enums",2023-06-19T12:28:42Z,2002Bishwajeet
+"Feat: Functions G4",2023-06-19T09:17:52Z,Meldiron
+"fix: abuse label for creating phone session",2023-06-16T10:43:28Z,TorstenDittmann
+"Incomplete Example, generate error: TypeError: file.stream.pipe is no…",2023-06-15T21:52:37Z,Jhongt796
+"Update delete session description to be actually correct",2023-06-14T17:50:25Z,gewenyu99
