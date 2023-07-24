@@ -4,4 +4,8 @@
 # ide
 .idea/
 
-AutomationMytheresa/target/
+AutomationMytheresa/target/*
+
+!AutomationMytheresa/target/pom.xml
+!AutomationMytheresa/target/github_prs.csv
+!AutomationMytheresa/target/init.groovy
