@@ -6,6 +6,7 @@ import com.constants.IconConstant;
 import com.constants.UrlConstant;
 import com.microsoft.playwright.Locator;
 import com.utils.UIUtil;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -23,6 +24,11 @@ public class LoginE2ETest extends BaseTest {
         setUrl(UrlConstant.MainPage);
         setBrowser(BrowserConstant.Chrome);
         setUp();
+    }
+
+    @AfterClass
+    public void afterClass() {
+        tearDown();
     }
 
     @Test(description = "E2E test - successful login")
