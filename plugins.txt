@@ -1,0 +1,2 @@
+job-dsl:latest
+workflow-aggregator:latest

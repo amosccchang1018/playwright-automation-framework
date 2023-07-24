@@ -1,0 +1,16 @@
+FROM jenkins/jenkins:lts
+
+USER root
+
+RUN apt-get update && \
+    apt-get install -y openjdk-11-jdk && \
+    apt-get clean;
+
+USER jenkins
+
+# Test : install Jenkins plugins
+COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
+RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
+
+# Copy the init.groovy script into the Docker image
+COPY init.groovy /usr/share/jenkins/ref/init.groovy.d/
