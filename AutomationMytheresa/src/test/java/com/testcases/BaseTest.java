@@ -1,6 +1,5 @@
 package com.testcases;
 
-import com.constants.DomainConstant;
 import com.microsoft.playwright.*;
 import org.testng.asserts.SoftAssert;
 
@@ -27,7 +26,7 @@ public class BaseTest {
     // url (default QA domain)
     Logger logger = Logger.getLogger(BaseTest.class.getName());
     SoftAssert softAssert = new SoftAssert();
-    String domain = DomainConstant.TestStage;
+    String domain = "test";
     String baseUrl = "https://%s.%s";
     private static String fullUrl;
     private Map<String, String> keyMap = new HashMap<>();

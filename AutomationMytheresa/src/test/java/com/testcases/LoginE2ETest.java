@@ -20,7 +20,7 @@ public class LoginE2ETest extends BaseTest {
 
     @BeforeClass
     public void beforeClass(){
-        setDomain(DomainConstant.ProdStage);
+        setDomain(DomainConstant.getStage());
         setUrl(UrlConstant.MainPage);
         setBrowser(BrowserConstant.Chrome);
         setUp();
