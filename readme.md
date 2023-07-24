@@ -22,7 +22,7 @@ The recommended PC specifications for executing these test cases are as follows:
   ```sh
 . 
 mytheresa_qa_callenge_chi_chun
-├── run.sh ()
+├── run.sh (script to run test cases in container)
 ├── .gotignore
 ├── Dockerfile-java
 ├── Dockerfile-jenkins
@@ -103,6 +103,10 @@ cd  path/to/mytheresa_qa_callenge_chi_chun
 4. After executing `run.sh`, a virtual environment will be established, and the test cases will be run. The results will be displayed in the terminal.
 
 
+ ![Imgur](https://i.imgur.com/f5BFmFs.png)
+
+ ![Imgur](https://i.imgur.com/Cqr6IKH.png)
+
 Note: The shell script will build a container with the following components:
 
 *1.Ubuntu Linux 20.04*
@@ -113,11 +117,40 @@ Note: The shell script will build a container with the following components:
 
 *4.Playwright*
 
+*5.testNG*
+
+### Jenkins UI Display (In Progress)
+
+For setting up the Jenkins UI, navigate to the repository directory first, then locate and execute the specific shell script:
+
+```sh
+cd path/to/mytheresa_qa_callenge_chi_chun/runJenkins.sh
+
+./runJenkins.sh
+```
+
+After running the script, open a web browser and navigate to http://localhost:8080/. You'll be redirected to the Jenkins dashboard, as shown below:
+
+ ![Imgur](https://i.imgur.com/UlyUoBn.png)
+
+From this dashboard, you can manage and trigger test cases using the UI interface, eliminating the need to operate exclusively within the terminal environment.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## About test cases
 
 ---
+
+### How to set domain in the beginning
+
+To set desired domain, navigate to the following file:
+
+```sh
+cd path/to/mytheresa_qa_callenge_chi_chun/AutomationMytheresa/src/test/resources/config.properties
+```
+In the config file, you are able to set the environment first.
+
+### About test cases
+
 
 The test cases are created based on the documented requirements and are located in the following files:
 
@@ -136,6 +169,8 @@ cd path/to/mytheresa_qa_callenge_chi_chun/AutomationMytheresa/src/test/java/com/
 ## Future Testing Plans and Infrastructure Recommendations
 
 ---
+
+* Complete the Jenkins configuration. Approximately 80% of the settings have already been established, as referenced in files with the suffix **"-Jenkins"**.
 
 * Utilize tools like Confluence and Jira for better project management.
 * Finalize the infrastructure framework.
