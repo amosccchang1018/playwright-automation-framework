@@ -1,17 +1,17 @@
 ## About The Project
 
-This project is designed to test whether the login feature is working properly on a specific shopping website.
+This project aims to validate the functionality of the login feature for a specific e-commerce website.
 
 ## Hardware Specifications
 
 ---
 
-PC recommended requirement for this test cases
+The recommended PC specifications for executing these test cases are as follows:
 
-* Mac OS
-* Memory : 8 GRAM min
-* min 256GD disk space
-* i5 process 
+* Operating System: Mac OS
+* Memory: Minimum 8GB RAM
+* Disk Space: At least 256GB
+* Processor: Intel i5 or equivalent
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -53,41 +53,45 @@ mytheresa_qa_callenge_chi_chun
 ## Prerequisites
 
 ---
-1. [docker](https://docs.docker.com/engine/install/) installed
-2. [Java 11](https://www.oracle.com/java/technologies/downloads/) installed (run locally)
-3. [Maven](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) (run locally)
-3. IDE [IntelliJ](https://www.jetbrains.com/idea/download/) installed (run locally)
+
+The following tools must be installed to execute this project:
+
+1. [docker](https://docs.docker.com/engine/install/)
+2. [Java 11](https://www.oracle.com/java/technologies/downloads/) (for local execution)
+3. [Maven](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) (for local execution)
+3. IDE [IntelliJ](https://www.jetbrains.com/idea/download/) (for local execution)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Run
+## Execution
 
 ---
 
-### Run locally
+### Local Execution
 
-1. Install above **prerequisites 1 to 4** in your local working environment.
-2. After installation, **open IntelliJ**. 
-3. For first time, it is needed to build the project with necessary configuration and dependencies. Click the
-   **maven** > **Refresh icon**(Reload All Maven Projects). It would take some time, please be patient.
-
+1. Install the **prerequisites** listed above in your local environment.
+2. Launch the **IntelliJ IDE** after installation. 
+3. Upon initial launch, the project needs to be built with the necessary configurations and dependencies. To do this, click on **Maven** > **Refresh icon** (Reload All Maven Projects). This might take a while, so your patience is appreciated.
+  
    ![Imgur](https://i.imgur.com/WETlznc.png)
 
-4. Select certain test cases or all test cases in class, click the run icon
+4. Choose a specific test case or all test cases in a class, then click the run icon.
 
    ![Imgur](https://i.imgur.com/K057pnX.png)
 
-5. After clicking it, select "Debug *'test case function'* "
+5. After clicking, select "Debug 'test case function' ".
 
    ![Imgur](https://i.imgur.com/6QGSbmy.png)
 
-6. Waiting until the running is done, you will see the result in the Debugger console and related error message which will help to troubleshoot.
-
+6. Wait for the execution to complete. The results and any error messages (useful for troubleshooting) will be displayed in the Debugger console.
+7. 
    ![Imgur](https://i.imgur.com/i80JOOT.png)
 
 
 
-### Run in a Docker Container
+### Execution in a Docker Container
+
+Follow these steps to execute the test cases within a Docker container:
 
 1. Pull the entire repository.
 2. Navigate to the path where the repository is located and locate the shell script `run.sh`.
@@ -96,9 +100,10 @@ cd  path/to/mytheresa_qa_callenge_chi_chun
 ```
 3. Execute the `run.sh` in your terminal.
 
-4. After the `run.sh` script has been executed, a virtual environment will be created and test cases will be run. You will be able to see the results in the terminal.
+4. After executing `run.sh`, a virtual environment will be established, and the test cases will be run. The results will be displayed in the terminal.
 
-Note : the shell script will build a container with following 
+
+Note: The shell script will build a container with the following components:
 
 *1.Ubuntu Linux 20.04*
 
@@ -114,13 +119,13 @@ Note : the shell script will build a container with following
 
 ---
 
-Based on the document requirement, the test cases are in following file,
+The test cases are created based on the documented requirements and are located in the following files:
 
-1. LoginTest (As a tester)
-2. LoginE2ETest (As a customer)
-3. WebScrapingTest (As a product owner)
+1. LoginTest (as a tester)
+2. LoginE2ETest (as a customer)
+3. WebScrapingTest (as a product owner)
 
-how to find them 
+To access them, navigate to the following directory:
 
 ```sh
 cd path/to/mytheresa_qa_callenge_chi_chun/AutomationMytheresa/src/test/java/com/testcases
@@ -128,12 +133,12 @@ cd path/to/mytheresa_qa_callenge_chi_chun/AutomationMytheresa/src/test/java/com/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Recommendation for future test plans and infrastructure
+## Future Testing Plans and Infrastructure Recommendations
 
 ---
 
-* Using tools e.g. Confluence and Jia
-* Finish the Infrastructure framework
+* Utilize tools like Confluence and Jira for better project management.
+* Finalize the infrastructure framework.
 
 #### Infrastructure for future test plans
 
