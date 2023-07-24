@@ -4,4 +4,4 @@
 # ide
 .idea/
 
-/target/
+target/
