@@ -8,4 +8,4 @@ SCRIPT_DIRECTORY=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 docker build -t $IMAGE_NAME -f Dockerfile-java $SCRIPT_DIRECTORY
 
 # Run the test cases in the Docker container
-docker run -it --rm $IMAGE_NAME mvn -Dtest=LoginTest,LoginE2ETest,WebScrapingTest test
+docker run -it --rm -v $SCRIPT_DIRECTORY/AutomationMytheresa:/app $IMAGE_NAME mvn -Dtest=LoginTest,LoginE2ETest,WebScrapingTest test

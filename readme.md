@@ -100,7 +100,14 @@ cd  path/to/mytheresa_qa_callenge_chi_chun
 ```
 3. Execute the `run.sh` in your terminal.
 
-4. After executing `run.sh`, a virtual environment will be established, and the test cases will be run. The results will be displayed in the terminal.
+```bash
+# Permissions
+chmod +x run.sh
+# Execution
+/.run.sh
+```
+4. 
+5. After executing `run.sh`, a virtual environment will be established, and the test cases will be run. The results will be displayed in the terminal.
 
 
  ![Imgur](https://i.imgur.com/f5BFmFs.png)
