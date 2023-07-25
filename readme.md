@@ -43,7 +43,7 @@ mytheresa_qa_callenge_chi_chun
     │
     └── target
         ├── pom.xml (dependencs)
-        └── github_prs.csv (csv compiled from the pull request page on GitHub)
+        └── Github_PRs<timeStamp>.csv (csv compiled from the pull request page on GitHub)
     
   ```
 
@@ -186,6 +186,8 @@ From this dashboard, you can manage and trigger test cases using the UI interfac
 * Finalize the infrastructure framework.
 
 #### Infrastructure for future test plans
+
+Utilizing the provided template, we will comprehensively analyze each feature and design corresponding test cases.
 
 ![Imgur](https://i.imgur.com/S7oXs7i.png)
 
