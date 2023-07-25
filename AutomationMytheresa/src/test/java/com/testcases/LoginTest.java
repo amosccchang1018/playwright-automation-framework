@@ -3,6 +3,7 @@ package com.testcases;
 import com.constants.BrowserConstant;
 import com.constants.DomainConstant;
 import com.constants.UrlConstant;
+import com.microsoft.playwright.PlaywrightException;
 import com.microsoft.playwright.Response;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -70,17 +71,22 @@ public class LoginTest extends BaseTest {
             String href = matcher.group(1);
 
             // Verify the link URL
-            Response response = page.navigate(href);
-            page.waitForLoadState();
-            int statusCode = response.status();
+            try {
+                Response response = page.navigate(href);
+                page.waitForLoadState();
+                int statusCode = response.status();
 
-            // Check if the status code is either 200 or 30x
-            softAssert.assertTrue(statusCode == 200 || (statusCode >= 300 && statusCode < 400),
-                    "Unexpected status code for link: " + href + ", Status code: " + statusCode);
+                // Check if the status code is either 200 or 30x
+                softAssert.assertTrue(statusCode == 200 || (statusCode >= 300 && statusCode < 400),
+                        "Unexpected status code for link: " + href + ", Status code: " + statusCode);
 
-            // Check if the status code is not 40x
-            softAssert.assertFalse(statusCode >= 400 && statusCode < 500,
-                    "Unexpected status code for link: " + href + ", Status code: " + statusCode);
+                // Check if the status code is not 40x
+                softAssert.assertFalse(statusCode >= 400 && statusCode < 500,
+                        "Unexpected status code for link: " + href + ", Status code: " + statusCode);
+            } catch (PlaywrightException e) {
+                // Handle timeout exception
+                softAssert.fail("Timeout occurred for link: " + href + ", Error: " + e.getMessage());
+            }
         }
     }
 
