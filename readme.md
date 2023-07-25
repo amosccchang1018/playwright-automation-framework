@@ -63,6 +63,38 @@ The following tools must be installed to execute this project:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## About test cases
+
+---
+
+### How to set domain in the beginning
+
+To set desired domain, navigate to the following file:
+
+```sh
+cd path/to/mytheresa_qa_callenge_chi_chun/AutomationMytheresa/src/test/resources/config.properties
+```
+In the config file, you are able to set the environment first.
+
+![Imgur](https://i.imgur.com/hc4xlZd.png)
+
+### About test cases
+
+
+The test cases are created based on the documented requirements and are located in the following files:
+
+1. LoginTest (as a tester)
+2. LoginE2ETest (as a customer)
+3. WebScrapingTest (as a product owner)
+
+To access them, navigate to the following directory:
+
+```sh
+cd path/to/mytheresa_qa_callenge_chi_chun/AutomationMytheresa/src/test/java/com/testcases
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Execution
 
 ---
@@ -143,35 +175,6 @@ After running the script, open a web browser and navigate to http://localhost:80
 From this dashboard, you can manage and trigger test cases using the UI interface, eliminating the need to operate exclusively within the terminal environment.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## About test cases
-
----
-
-### How to set domain in the beginning
-
-To set desired domain, navigate to the following file:
-
-```sh
-cd path/to/mytheresa_qa_callenge_chi_chun/AutomationMytheresa/src/test/resources/config.properties
-```
-In the config file, you are able to set the environment first.
-
-### About test cases
-
-
-The test cases are created based on the documented requirements and are located in the following files:
-
-1. LoginTest (as a tester)
-2. LoginE2ETest (as a customer)
-3. WebScrapingTest (as a product owner)
-
-To access them, navigate to the following directory:
-
-```sh
-cd path/to/mytheresa_qa_callenge_chi_chun/AutomationMytheresa/src/test/java/com/testcases
-```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Future Testing Plans and Infrastructure Recommendations
 

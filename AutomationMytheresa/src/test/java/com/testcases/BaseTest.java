@@ -97,9 +97,9 @@ public class BaseTest {
 
     public Map<String, String> getHeaders() {
         Map<String, String> headers = new HashMap<>();
+        // Add more headers if needed
         headers.put("User-Agent",
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36");
-        // Add more headers if needed
         return headers;
     }
 
@@ -109,5 +109,5 @@ public class BaseTest {
         String script = String.format("document.cookie = '%s=%s'", key, value);
         page.evaluate(script);
     }
-    
+
 }
