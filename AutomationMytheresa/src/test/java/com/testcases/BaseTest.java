@@ -109,8 +109,5 @@ public class BaseTest {
         String script = String.format("document.cookie = '%s=%s'", key, value);
         page.evaluate(script);
     }
-
-    public BrowserContext getContext(){
-        return context;
-    }
+    
 }

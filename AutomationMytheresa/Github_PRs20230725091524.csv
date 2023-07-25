@@ -1,8 +1,9 @@
 PR Name,Creation Date,Author
+"audio/aac mime type added",2023-07-25T00:52:33Z,lohanidamodar
+"Feat upgrade task",2023-07-24T22:30:29Z,stnguyen90
 "test updated docker-base version",2023-07-23T08:09:48Z,lohanidamodar
-"Create a dedicated upgrade command",2023-07-21T18:29:40Z,stnguyen90
 "Add support for queries in List attributes and List Indexes endpoint",2023-07-20T18:52:35Z,fanatic75
-"change to use findOne instead of iterating index array",2023-07-19T08:35:49Z,fanatic75
+"change to use find instead of iterating index array in Get Index route",2023-07-19T08:35:49Z,fanatic75
 "Appwrite 1.4.0",2023-07-19T07:15:47Z,eldadfux
 "feat: router gen. 2",2023-07-18T12:54:35Z,TorstenDittmann
 "Bump clamav to get it working again",2023-07-17T20:11:45Z,stnguyen90
@@ -23,4 +24,3 @@ PR Name,Creation Date,Author
 "Feat: Whitelist enums",2023-06-19T12:28:42Z,2002Bishwajeet
 "Feat: Functions G4",2023-06-19T09:17:52Z,Meldiron
 "fix: abuse label for creating phone session",2023-06-16T10:43:28Z,TorstenDittmann
-"Incomplete Example, generate error: TypeError: file.stream.pipe is no?",2023-06-15T21:52:37Z,Jhongt796

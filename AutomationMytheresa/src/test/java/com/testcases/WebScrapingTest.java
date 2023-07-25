@@ -49,6 +49,7 @@ public class WebScrapingTest extends BaseTest {
                 "Array.from(document.querySelectorAll('a.Link--muted[data-hovercard-type=\"user\"]')).map(el => el.innerText)");
 
         // Output the data in CSV format
-        UIUtil.writeCSV(prNames, creationDates, authors);
+        String fileName = "Github_PRs";
+        UIUtil.writeCSV(fileName, prNames, creationDates, authors);
     }
 }

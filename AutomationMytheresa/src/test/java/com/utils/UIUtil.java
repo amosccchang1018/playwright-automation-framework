@@ -55,10 +55,11 @@ public class UIUtil {
     }
 
 
-    public static void writeCSV(List<String> prNames, List<String> creationDates, List<String> authors) {
-        String file_name = "Github_PRs.csv";
+    public static void writeCSV(String fileName, List<String> prNames, List<String> creationDates, List<String> authors) {
+        String timestamp = CommonUtil.getTimestamp();
+        String full_filename = fileName + timestamp + ".csv";
         try {
-            FileWriter csvWriter = new FileWriter(file_name);
+            FileWriter csvWriter = new FileWriter(full_filename);
 
             // Write the CSV header
             csvWriter.append("PR Name");
@@ -82,7 +83,7 @@ public class UIUtil {
             csvWriter.flush();
             csvWriter.close();
 
-            logger.info("Data has been successfully written to " + file_name);
+            logger.info("Data has been successfully written to " + full_filename);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -105,7 +106,6 @@ public class UIUtil {
             }
             pageSource = page.content();
         }
-
     }
 
     public static void clickButtonByText(Page page, String keyword) {
