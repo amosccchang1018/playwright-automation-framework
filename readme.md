@@ -23,7 +23,7 @@ The recommended PC specifications for executing these test cases are as follows:
 . 
 mytheresa_qa_callenge_chi_chun
 ├── run.sh (script to run test cases in container)
-├── .gotignore
+├── .gitignore
 ├── Dockerfile-java
 ├── Dockerfile-jenkins
 ├── readme.md
@@ -36,13 +36,13 @@ mytheresa_qa_callenge_chi_chun
     │               ├── constants 
     │               ├── utils
     │               └── testcases (Test cases for the application)
-    │                   ├── LoginE2ETest.java
-    │                   ├── LoginTest.java
-    │                   ├── WebScrapingTest.java
+    │                   ├── LoginE2ETest.java (as a tester)
+    │                   ├── LoginTest.java (as a customer)
+    │                   ├── WebScrapingTest.java (as a product owner)
     │                   └── ...
     │
     └── target
-        ├── pom.xml (dependencs)
+        ├── pom.xml (dependencies)
         └── Github_PRs<timeStamp>.csv (csv compiled from the pull request page on GitHub)
     
   ```
