@@ -1,12 +1,19 @@
 FROM jenkins/jenkins:lts
 
+# Skip the plug installation
+ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
+
 USER root
 
 RUN apt-get update && \
-    apt-get install -y openjdk-11-jdk && \
+    apt-get install -y openjdk-11-jdk curl && \
+    curl -fsSL https://get.docker.com -o get-docker.sh && \
+    sh get-docker.sh && \
     apt-get clean;
 
-USER jenkins
+# Copy the shell script into the Docker container
+COPY run.sh /var/jenkins_home/run.sh
+RUN chmod +x /var/jenkins_home/run.sh
 
 # Test : install Jenkins plugins
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt

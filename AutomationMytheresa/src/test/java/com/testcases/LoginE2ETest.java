@@ -6,6 +6,7 @@ import com.constants.IconConstant;
 import com.constants.UrlConstant;
 import com.microsoft.playwright.Locator;
 import com.utils.UIUtil;
+import io.qameta.allure.Link;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -31,6 +32,8 @@ public class LoginE2ETest extends BaseTest {
         tearDown();
     }
 
+    @Link("https://example.org")
+    @Link(name = "allure", type = "mylink")
     @Test(description = "E2E test - successful login")
     public void testLogin() throws InterruptedException {
         String url = getUrl();
